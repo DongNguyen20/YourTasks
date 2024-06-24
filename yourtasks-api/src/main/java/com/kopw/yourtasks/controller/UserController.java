@@ -3,6 +3,7 @@ package com.kopw.yourtasks.controller;
 import com.kopw.yourtasks.model.TaskDto;
 import com.kopw.yourtasks.model.UserDto;
 import com.kopw.yourtasks.service.UserService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
@@ -21,6 +22,7 @@ import java.util.Set;
 @RequestMapping("/users")
 @RequiredArgsConstructor
 @Slf4j
+@Tag(name = "User Apis")
 public class UserController {
     private final UserService userService;
 
